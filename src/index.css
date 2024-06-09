@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-dmSans bg-appBlack text-appWhite;
+}
+
+@keyframes flow {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.icon-gradient {
+  fill: url(#gradient);
+}
+
+.icon-container {
+  background: linear-gradient(to right, #017373, #aad9d1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
